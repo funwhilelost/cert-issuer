@@ -2,7 +2,7 @@
 
 # cert-issuer
 
-he cert-issuer project issues blockchain certificates by creating a transaction from the issuing institution to the
+The cert-issuer project issues blockchain certificates by creating a transaction from the issuing institution to the
 recipient on the Bitcoin blockchain that includes the hash of the certificate itself. 
 
 ## Quick start using Docker
@@ -19,7 +19,7 @@ experimenting only.
     ```
 
 
-3. From a command line in cert-issuer dir, build your docker container:
+3. From a command line in cert-issuer dir, build your Docker container:
     
     ```
     docker build -t ml/cert-issuer:1.0 .
@@ -27,8 +27,8 @@ experimenting only.
 
 4. Read before running!
 
-    - Once you launch the docker container, you will make some changes using your personal issuing information. This flow mirrors what you would if you were issuing real certificates.
-    - To avoid losing your work, you should create snapshots of your docker container. You can do this by running:
+    - Once you launch the Docker container, you will make some changes using your personal issuing information. This flow mirrors what you would do if you were issuing real certificates.
+    - To avoid losing your work, you should create snapshots of your Docker container. You can do this by running:
 
         ```
         docker ps -l
@@ -46,7 +46,7 @@ experimenting only.
 __Important__: this is a simplification to avoid using a USB, which needs to be inserted and removed during the
 standard certficate issuing process. Do not use these addresses or private keys for anything other than experimenting.
 
-Ensure your docker image is running and bitcoind process is started
+Ensure your Docker image is running and bitcoind process is started.
 
 1. Create an 'issuing address' and save the output as follows:
 
@@ -105,9 +105,9 @@ corresponding private key for testing issuing certificates:
 
 ## Unit tests
 
-This project uses tox to validate against several python environments.
+This project uses tox to validate against several Python environments.
 
-1. Ensure you have an python environment. [Recommendations](https://github.com/blockchain-certificates/developer-common-docs/blob/master/virtualenv.md)
+1. Ensure you have a Python environment. [Recommendations](https://github.com/blockchain-certificates/developer-common-docs/blob/master/virtualenv.md)
 
 2. Run tests
     ```
@@ -137,7 +137,6 @@ See [https://github.com/richardkiss/pycoin/issues/194](https://github.com/richar
 raise ScriptError("getitem out of range")
 pycoin.tx.script.ScriptError: getitem out of range
 ```
-
 
 ## Contact
 
